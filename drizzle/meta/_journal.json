@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1786685137289,
+      "tag": "0000_opposite_iceman",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1786686813545,
+      "tag": "0001_loose_captain_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1786687672953,
+      "tag": "0002_flawless_fabian_cortez",
+      "breakpoints": true
+    }
+  ]
+}

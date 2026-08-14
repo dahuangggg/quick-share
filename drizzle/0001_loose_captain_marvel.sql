@@ -1,0 +1,1 @@
+ALTER TABLE `shares` ADD `note_text` text;
