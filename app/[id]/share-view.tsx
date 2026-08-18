@@ -1,7 +1,8 @@
 "use client";
 
+/* eslint-disable @next/next/no-html-link-for-pages -- Vinext currently intercepts these Link clicks without completing navigation. */
+
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
 
 type ShareMetadata = {
   id: number;
@@ -98,10 +99,10 @@ export function ShareView({ requestedId }: { requestedId: string }) {
   return (
     <div className="share-shell">
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="快传首页">
+        <a className="brand" href="/" aria-label="快传首页">
           <span className="brand-mark">S</span>
           <span>快传</span>
-        </Link>
+        </a>
         <span className="privacy-note">收到后记得及时保存</span>
       </header>
 
@@ -117,7 +118,7 @@ export function ShareView({ requestedId }: { requestedId: string }) {
               <span className="success-kicker">{status === "missing" ? "没有找到" : "无法取件"}</span>
               <h1>{status === "expired" || expiredByClock ? "这个分享已过期" : status === "missing" ? "编号不存在" : "暂时读取失败"}</h1>
               <p>{status === "expired" || expiredByClock ? "内容已经停止访问，请让发送者重新上传。" : "请检查编号，或稍后再试一次。"}</p>
-              <Link href="/">返回首页</Link>
+              <a href="/">返回首页</a>
             </div>
           ) : share ? (
             <>
@@ -163,7 +164,7 @@ export function ShareView({ requestedId }: { requestedId: string }) {
                     <span>下载文件</span><span aria-hidden="true">↓</span>
                   </a>
                 )}
-                <Link className="secondary-button" href="/">返回首页</Link>
+                <a className="secondary-button" href="/">返回首页</a>
               </div>
             </>
           ) : null}

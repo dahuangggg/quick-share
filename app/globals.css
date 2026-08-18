@@ -250,6 +250,47 @@ footer { height: 74px; border-top: 1px solid rgba(24, 32, 25, .18); display: fle
 .share-status p { color: var(--muted); line-height: 1.6; }
 .share-status a { color: var(--ink); font-weight: 700; }
 
+@media (min-width: 821px) {
+  .site-header { height: 72px; }
+  .hero { padding: 28px 0 18px; }
+  .hero-copy { padding-top: 18px; }
+  .upload-card { padding: 26px 30px; }
+  .card-heading { margin-bottom: 16px; }
+  .drop-zone { min-height: 120px; }
+  .drop-action { min-height: 118px; }
+  .selected-file { padding: 12px 16px; }
+  .or-divider { margin: 12px 0; }
+  textarea { height: 96px; min-height: 96px; }
+  .retention-fieldset { margin: 16px 0; }
+  .password-field { gap: 6px; margin-bottom: 16px; }
+  .password-field input { height: 44px; }
+  .primary-button, .secondary-button { min-height: 47px; }
+  .receive-card { padding: 14px 18px; }
+  footer { height: 56px; }
+}
+
+@media (min-width: 821px) and (max-height: 820px) {
+  .site-header { height: 60px; }
+  .hero { padding: 16px 0 8px; }
+  .hero-copy { padding-top: 12px; }
+  .hero h1 { font-size: clamp(48px, 6vw, 76px); }
+  .hero-lede { margin-top: 20px; line-height: 1.6; }
+  .utility-stack { gap: 10px; }
+  .upload-card { padding: 18px 24px; }
+  .card-heading { margin-bottom: 12px; }
+  .drop-zone { min-height: 100px; }
+  .drop-action { min-height: 98px; }
+  .or-divider { margin: 8px 0; }
+  textarea { height: 76px; min-height: 76px; }
+  .retention-fieldset { margin: 12px 0; }
+  .password-field { gap: 4px; margin-bottom: 12px; }
+  .password-field input { height: 40px; }
+  .primary-button, .secondary-button { min-height: 43px; }
+  .receive-card { padding: 10px 16px; }
+  .receive-card form { height: 40px; }
+  footer { height: 44px; }
+}
+
 @media (max-width: 820px) {
   .home-shell, .share-shell { width: min(100% - 28px, 620px); }
   .site-header { height: 74px; }

@@ -14,6 +14,8 @@
     "test": "npm run build && node scripts/prepare-cloudflare-deploy.mjs ../wrangler.direct.example.jsonc && node --test tests/rendered-html.test.mjs",
     "test:upload-security": "node tests/upload-security.e2e.mjs",
     "test:ui-switch": "node tests/file-text-switch.e2e.mjs",
+    "test:home-navigation": "node tests/home-navigation.e2e.mjs",
+    "test:home-layout": "node tests/home-layout.e2e.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
